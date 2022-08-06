@@ -1,9 +1,9 @@
 import React from 'react';
-import { UserGrid } from '../components';
-
+import UserGrid  from 'components/UserGrid';
+import styles from './Landing.module.scss';
 const Landing = (props) => {
     return (
-        <div>
+        <div className={styles.LandingPage}>
             <UserGrid />
         </div>
     );

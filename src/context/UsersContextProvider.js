@@ -7,7 +7,8 @@ const UsersContextProvider = (props) => {
     const [users, setUsers] = useState();
     useEffect(() => {
         const fetchAPI = async () => {
-            setUsers(await getAPI());
+            const usersData = await getAPI();
+            setUsers(usersData.results);
         } 
         fetchAPI();
     },[]);
